@@ -1,9 +1,9 @@
 module.exports = {
     "name":"me",
-    "description": "PONG!",
-    "usage": "",
+    "description": "you do a thing!",
+    "usage": "<a thing>",
     "run": function(client, msg, args, config) {
-		let does = msg.content.substring((config.prefix + this.name).length + 1, 99999)
+		let does = args.join(" ")
         msg.delete()
         client.createMessage(msg.channel.id, {
             content: '',
