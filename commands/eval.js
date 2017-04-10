@@ -3,7 +3,7 @@ module.exports = {
     "description": "eval a thing!",
     "usage": "[JS]",
     "run": function(client, msg, args, config) {
-		var code = args.join(" ")
+		var code = msg.content.substring(config.prefix.length + this.name.length + 1, 9999)
         try {
             msg.edit("Eval:\n```js\n" + code + "\n```Output:\n```fix\n" + eval(code) + "```")
         }
