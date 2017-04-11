@@ -1,5 +1,5 @@
 module.exports = {
-    "name":"eval",
+    "name":"exec",
     "description": "eval a thing!",
     "usage": "[SHELL]",
     "run": function(client, msg, args, config) {
