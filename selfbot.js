@@ -14,6 +14,7 @@ client.on("ready", () => {
     console.log(
        `Running - ${client.user.username} on ${client.guilds.size} servers.`
     );
+    client.editStatus("invisible")
 });
 
 function init(commandDB) {
