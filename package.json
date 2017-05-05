@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/SplitPixl/Selfbot#readme",
   "dependencies": {
-    "eris": "^0.6.0"
+    "eris": "^0.6.0",
+    "moment": "^2.18.1"
   }
 }
